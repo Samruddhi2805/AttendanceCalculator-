@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attendance Calculator</title>
+        <link rel="stylesheet" href="task2.css"></a>
+        <script src="new.js"></script>
+    </head>
+    <body>
+        <h2>Attendance Calculator</h2><br>
+        <form>
+        <div class="form-container">
+        <label for="name"><b>Student Name:<br></label>
+        <input type="text" id="name" name="name" placeholder="Enter Name"></input><br><br>
+
+        <label for="name">Month:<br></label>
+        <input type="month" id="month" name="month" placeholder="Month"></input><br><br>
+        
+        <label for="name">Days Attended:<br></label>
+        <input type="number" id="daysAttended" placeholder="Days" onclick="addnumbers()"></input><br><br>
+
+        <label for="name">Total Working Days:<br></label>
+        <input type="number" id="Totalworkingdays" placeholder="Workingdays" onclick="addnumbers()"></input><br><br>
+
+        <button id="b1" onclick="calculateAttendance(event)"> Calculate Attendance</button><br>
+
+        <div id="result"  class="result"></div><br><br>
+        <table>
+            <thead>
+		    <th>Student Name</th>
+		    <th>Total classes Attended</th>
+		    <th>Percentage %</th>
+            </thead>
+            <tbody id="attendend">
+                <!-- table rows -->
+            </tbody>
+        </div>
+        </form>
+	</table>
+    </body>
+    </html>
